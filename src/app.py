@@ -6,9 +6,15 @@ from db.db import db, app, ma
 
 from tablas.primera import primeras, primeraSchema
 
+#api
+from api.primera import routes_primeraa
+#rutas 
 from rutas.primer import routes_primer
 
 app.register_blueprint(routes_primer, url_prefix="/fronted")
+
+app.register_blueprint(routes_primeraa, url_prefix="/api")
+
 
 #esto para que corra el server y ayuda con el puerto
 if __name__ == '__main__':

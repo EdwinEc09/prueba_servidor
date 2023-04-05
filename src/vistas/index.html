@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>prueba sercidor</title>
-</head>
-<body>
+
+{% extends "./layout.html" %}
+{% block body %}
     
    <div class="group-material">
     <input id="name" type="text">
@@ -16,5 +10,5 @@
    </div>
    <script src="app.js"></script>
 
-</body>
-</html>
+
+   {% endblock %}
