@@ -7,7 +7,7 @@ from tablas.primera import primeras, primeraSchema
 @routes_primer.route('/indexprimer', methods=['GET'] )
 def indexinstitution():
     
-    return render_template('/vistas/index.html')
+    return render_template('/index.html')
 
 
 @routes_primer.route('/guardarinstitution',methods=['POST'])

@@ -4,10 +4,7 @@
 from flask import Flask,  redirect, request, jsonify, json, session, render_template
 from db.db import db, app, ma
 
-
-
 from tablas.primera import primeras, primeraSchema
-
 
 from rutas.primer import routes_primer
 
