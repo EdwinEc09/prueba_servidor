@@ -9,23 +9,16 @@ from config.db import db, app, ma
 #importar los model en orden
 from model.paciente import pacientes
 from model.odontologo import odontologos
-
 from model.cita import citas
 from model.tratamiento import tratamientos
 from model.histo_clinico import histoclinicos
 
 
-'''
-@app.route('/', methods=['GET'] )
-def indexinstitution():
-    
-    return render_template('/index.html')
-'''
 
-@app.route('/index', methods=['GET'] )
-def indexprimer():
-    
-    return "Hola Mundo!!"
+@app.route("/")
+def index():
+    titulo= "Pagina Princiapl"
+    return render_template('/index.html', titles=titulo)
 
 
 
